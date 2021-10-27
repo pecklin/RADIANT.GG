@@ -4,29 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant.GG</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <title>시나브로</title>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- 글꼴 출처 : https://blog.naver.com/hp0/221803810393 -->
-
     <link rel="stylesheet" href="main.css">
-    <div class="container">
-        <div id="title-wrap">
-            <div id="mainTitle">Radiant.GG</div>
-            <div id="subTitle">team : 시나브로</div>
-        </div>
 
-        <nav class="navbar navbar-light bg-light">
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="PlayerName#tag" aria-label="Search">
-              <br>
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">GO!</button>
-            </form>
-          </nav>
+    <div class="info-container">
+        <div id="proj-title">RADIANT.GG</div>
+        <div id="team-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;made by. team 시나브로</div>
     </div>
+    <div class="navbar-wrap">
+        <hr id="nav-top">
+        <div id="nav-content">
+            <button id="match-history" onclick = "location.href = 'main.html'">전적검색</button>
+            <button id="char-info" onclick = "location.href = '#'">캐릭터 정보</button>
+            <button id="gun-info" onclick = "location.href = '#'">총기 정보</button>
+            <button id="map-info" onclick = "location.href = '#'">맵 정보</button>
+            <button id="skin-info" onclick = "location.href = '#'">스킨 정보</button>   
+            <!-- onclick="location.href = '이동할 페이지'"" -->
+        </div>
+        <hr id="nav-bot">
+    </div>
+    <div class="player-search">
+        <table class="elementContainer">
+            <tr>
+                <td>
+                    <input type="text" placeholder="N A M E # T A G" class="search">
+                </td>
+                <td>
+                    <a href="#"><i class="material-icons">search</i></a>
+                </td>
+            </tr>
+        </table>
+
+        <!-- <div class="btn-wrap">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+
+
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 </body>
 </html>
