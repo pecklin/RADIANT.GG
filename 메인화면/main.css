@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #C9CDD2;
+    font-family: 'HS유지체', 'InkFree';
+}
+#mainTitle{
+    font-size: 35px;
+    font-style: bold;
+}
+#subTitle{
+    margin-bottom: 30px;
+}
+
+#title-wrap {
+    margin-top: 20vw;
+    text-align: center;
+}
+
+.navbar{
+    text-align: center;
+}
+
+.form-control{
+    width: 45%;
+    height: 5%;
+    text-align: center;
+    border: 3px solid black;
+    margin-bottom: 5%;
+}
+
+.btn{
+    font-size: 15%;
+    width: 10%;
+    height: 5%;
+    border: 3px solid black;
+}
+
+.btn:hover{
+    font-size: 1.5rem;
+    color: yellow;
+}
