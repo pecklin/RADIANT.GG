@@ -11,10 +11,19 @@
 </head>
 <body>
     <link rel="stylesheet" href="skinInfo.css">
-
-    <div class="info-container">
-        <div id="proj-title">RADIANT.GG</div>
-        <div id="team-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;made by. team 시나브로</div>
+    <div id="proj-title">RADIANT.GG</div>
+    <link rel="stylesheet" href="charPage.css">
+    <div class="navbar-wrap">
+        <hr id="nav-top">
+        <div id="nav-content">
+            <button class="navoption selected" id="match-history" onclick = "location.href = 'main.html'">전적검색</button>
+            <button class="navoption" id="char-info" onclick = "location.href = 'charPage.html'">캐릭터 정보</button>
+            <button class="navoption" id="gun-info" onclick = "location.href = 'gunInfo.html'">총기 정보</button>
+            <button class="navoption" id="map-info" onclick = "location.href = 'mapInfo.html'">맵 정보</button>
+            <button class="navoption" id="skin-info" onclick = "location.href = 'skinInfo.html'">스킨 정보</button>   
+            <!-- onclick="location.href = '이동할 페이지'"" -->
+        </div>
+        <hr id="nav-bot">
     </div>
     <div class="main-wrap">
         <div id="sub-weapon">

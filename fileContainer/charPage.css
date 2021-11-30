@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #C9CDD2;
+    font-family: 'HS유지체', 'InkFree';
+}
+
+button{
+    border: none;
+    font-size: 15px;
+    background-color: #C9CDD2;
+}
+
+button:hover{
+    color: yellow;
+}
+
+.info-container{
+    margin-top:3%;
+    margin-left: 45%;
+    margin-bottom: 2%;
+}
+
+.main-wrap{
+    margin-left: 20%;
+    align-items: center;
+}
+
+.main-wrap > div > button
+{
+    width: 100px;
+    height: 80px;
+    border: 3px solid black;
+    margin: 20px;
+}
+#proj-title{
+    font-size: 40px;
+}
+
+
+#nav-top{
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+#nav-bot{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+#nav-content{
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-content > button{
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+#proj-title{
+    margin-left:45%;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
