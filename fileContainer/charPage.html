@@ -7,21 +7,28 @@
     <title>Information</title>
     <link rel="stylesheet" href="charPage.css">
     <script src="index.js"></script>
-    <script src="JQuery보관폴더/jquery-3.6.0.js"></script>
+    <script src="../JQuery보관폴더/jquery-3.6.0.js"></script>
     <script>
-    fetch('https://valorant-api.com/v1/agents').then(res=>res.json()).then(res=>{
-        alert('success');
+    const data = fetch('https://valorant-api.com/v1/agents').then(res=>res.json()).then(res=>{
+        let name = "";
+        name = JSON.parse(data).displayName;
     });
-
-    function charName(){
-        var chName = new Array();
-        for(var a = 0; a<18 ;a++){
-            chName[a] = 
-        }
-        $(function(){
-            
+    $(document).ready(function(){
+        $('.char-box').css({
+            width: 40,
+            height: 40,
+        }).hover(function(){
+            $(this).animate({
+                width: 60,
+                height: 60
+            })
+        },function(){
+            $(this).animate({
+                width: 40,
+                height: 40
+            })
         });
-    }
+    });
     </script>
 </head>
 <body>
@@ -38,6 +45,28 @@
             <!-- onclick="location.href = '이동할 페이지'"" -->
         </div>
         <hr id="nav-bot">
+
+            <div id="box-top">
+                <div class="char-box" data-index="6">세이지</div>
+                <div class="char-box" data-index="1">피닉스</div>
+                <div class="char-box" data-index="2">제트</div>
+                <div class="char-box" data-index="3">레이나</div>
+                <div class="char-box" data-index="9">체임버</div>
+                <div class="char-box" data-index="7">사이퍼</div>
+                <div class="char-box" data-index="8">킬조이</div>
+                <div class="char-box" data-index="4">요루</div>
+                <div class="char-box" data-index="10">케이오</div>
+                <div class="char-box" data-index="16">브림스톤</div>
+            </div>
+            <div id="box-bot">
+                <div class="char-box" data-index="17">오멘</div>
+                <div class="char-box" data-index="11">소바</div>
+                <div class="char-box" data-index="12">스카이</div>
+                <div class="char-box" data-index="5">레이즈</div>
+                <div class="char-box" data-index="15">아스트라</div>
+                <div class="char-box" data-index="13">브리치</div>
+                <div class="char-box" data-index="14">바이퍼</div>
+            </div>
     </div>
 </body>
 </html>
