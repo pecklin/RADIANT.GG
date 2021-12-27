@@ -17,6 +17,10 @@ button:hover{
     color: yellow;
 }
 
+.first{
+    margin-left:50vw;
+}
+
 .info-container{
     margin-top:3%;
     margin-left: 45%;
@@ -24,7 +28,7 @@ button:hover{
 }
 
 .main-wrap{
-    margin-left: 20%;
+    margin-left: 150vw;
     align-items: center;
 }
 
